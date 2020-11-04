@@ -19,7 +19,7 @@ Do the following:
 */
 
 const votingAge = 18;
-  (votingAge > 17);
+  (votingAge > 17)
 
 /*
 Task 1b - Values
@@ -168,7 +168,7 @@ Use the game function below to do the following:
 */
 
 let computer = ' ';
-let user = ' ';
+let user = 'rock';
 // Setting main variables
 
 let computerChoice = Math.random();
@@ -178,7 +178,7 @@ console.log('computerChoice',computerChoice);
 
 //Updating random variable with choice
 
-function compCoversion(computerChoice){
+function compConversion(computerChoice){
      if(computerChoice < .34){
       computer = 'rock';
     }
@@ -188,6 +188,8 @@ function compCoversion(computerChoice){
     else {computer = 'scissors';
     }
   }
+
+compConversion(computerChoice);
 
 console.log('compConversion', computer)
 
@@ -215,11 +217,49 @@ function game(user, computer){
     else if(user === 'scissors' && computer === 'rock'){
       return "you lose!";
     }
-}
+  }
 
-  console.log(game('rock'));
+  console.log('rps', game(user, computer));
   
   //use functions to update the vars above
+
+//   let computer = Math.random();
+
+// console.log('random number', computer)
+
+// function game(user, computer){
+//   if(computer < .34){
+//         computer = 'rock';
+//   }
+//   else if(computer > .33 && computer < .67){
+//      computer = 'paper';
+//   }
+//   else {computer = 'scissors';
+//   }
+
+//   if(user === 'rock' && computer === 'scissors'){
+//     return "you win!";
+//   }
+//   else if(user === 'paper' && computer === 'rock'){
+//     return "you win!";
+//   }
+//   else if(user === 'scissors' && computer === 'paper'){
+//     return "you win!";
+//   }
+//   else if(user === 'rock' && computer === 'paper'){
+//     return "you lose!";
+//   }
+//   else if(user === 'paper' && computer === 'scissors'){
+//     return "you lose!";
+//   }
+//   else if(user === 'scissors' && computer === 'rock'){
+//     return "you lose!";
+//   }
+//   else if(user === computer){
+//     return "it's a tie";
+//   }
+// }
+//   console.log('rps', game('rock', computer));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
